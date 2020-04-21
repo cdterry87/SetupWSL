@@ -59,7 +59,12 @@ By default, the DocumentRoot is set to `/var/www/html`. To change it:
 sudo vi /etc/apache2/sites-available/000-default.conf
 sudo service apache2 restart
 ```
-Change DocumentRoot from `DocumentRoot /var/www`
+Change DocumentRoot from `DocumentRoot /var/www/html` to your own specified directory.
+
+You may also want to change the permissions on your DocumentRoot directory. If you changed your DocumentRoot directory using the instructions above, change `/var/www/html` in the example below to the directory you specified.
+```
+sudo chown your-user:your-user -R /var/www/html
+```
 
 ## Install MySQL
 ```
