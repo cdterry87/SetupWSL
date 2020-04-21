@@ -133,6 +133,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ## Install Laravel Installer
 ```
 composer global require laravel/installer
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
 ```
 Test it with the following command:
 ```
